@@ -12,4 +12,15 @@ export class ShoppingListComponent {
     new Ingredient('Apples', 5)
   ];
 
+  /**
+   * method takes new ingredient data from child component and adds it to the current ingredients list 
+   * to render on the page.
+   * 
+   * @param {Ingredient} newIngredient 
+   * @returns {void}
+   */
+  onIngredientAdded(newIngredient: Ingredient): void {
+    this.ingredients.push(newIngredient);
+  }
+
 }
